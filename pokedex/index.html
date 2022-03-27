@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!--enlace a hoja de estilos-->
+    <link rel="stylesheet" href="./Stylo.css">
+    <!-- enlace a javascript-->
+    <script src="./poke.js" type="text/javascript" defer></script>
+    
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Press+Start+2P&family=Rampart+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="banner">
+        <div class="banner-texto"><h1>BIENVENIDO ENTRENADOR POKEMON</h1></div>
+    </section>
+    <form action="" onsubmit="searchPokemon(event)">
+        <input type="text" name="pokemon" autocomplete="off" >
+    </form>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokedex</div>
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="./assets/pika.gif"/>
+        </div>
+        <div data-poke-id></div>
+        <div data-poke-types class="poke-types"></div>
+        <div data-poke-stats class="poke-stats"></div>
+    </div>
+    <footer class="footer">
+        <div class="despedida">
+            <h1>pokedex realizado por DRACH</h1>
+        </div>
+    </footer>
+</body>
+</html>
